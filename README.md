@@ -33,13 +33,33 @@ l'entité ce qui permet d'améliorer la performances.
 ![sc](./captures/5.PNG)
 
 #### Consulter la db
+
 ![sc](./captures/6.PNG)
 
-#### Consulter la listes des customers avec la projection
+#### Consulter les listes des customers avec la projection
+
 ![sc](./captures/7.PNG)
 
 2. Créer le micro-service inventory-service qui permet de gérer 
 les produits
+##### L'entite JPA Customer
+![sc](./captures/8.PNG)
+
+#### L'interface JPA Repository basee sur Spring Data ProductRepository
+![sc](./captures/9.PNG)
+
+#### Insertion de quelques products
+![sc](./captures/10.PNG)
+
+#### Configuration le fichier propertise
+![sc](./captures/11.PNG)
+
+#### Consulter la db
+![sc](./captures/12.PNG)
+
+### Consulter les listes des products
+![sc](./captures/13.PNG)
+
 
 3. Créer la Gateway Spring cloud Gateway
 4. Configuration statique du système de routage
