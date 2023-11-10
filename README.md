@@ -86,7 +86,29 @@ balancing and failover of middle-tier servers.
 ![sc](./captures/16.PNG)
 
 5. Créer l'annuaire Eureka Discrovery Service
+#### Ajouter la dependance :
+Eureka Server : spring-cloud- netflix Eureka Server.
 
+![sc](./captures/17.PNG)
+
+![sc](./captures/18.PNG)
 6. Faire une configuration dynamique des routes de la gateway
+
+#### Modification du fichier properties Customer-service, inventory-service et gateway:
+spring.cloud.discovery.enabled=true
+
+#### les services maintenant sont connectée:
+
+![sc](./captures/19.PNG)
+
+#### Configurer gatewayApplication:
+
+![sc](./captures/20.PNG)
+
+![sc](./captures/21.PNG)
+
+
 7. Créer le service de facturation Billing-Service en utilisant Open Feign
+
+
 8. Créer un client Web Angular (Clients, Produits, Factures)
