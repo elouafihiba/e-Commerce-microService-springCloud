@@ -60,10 +60,33 @@ les produits
 ### Consulter les listes des products
 ![sc](./captures/13.PNG)
 
-
 3. Créer la Gateway Spring cloud Gateway
+#### Ajouter les 3 dependancies:
+ - Gateway : Provides a simple, yet effective way
+to route to APIs and provide cross cutting
+concerns to them such as security,
+monitoring/metrics, and resiliency.
+- Spring Boot Actuator : Supports built in (or
+custom) endpoints that let you monitor and
+manage your application - such as application
+health, metrics, sessions, etc.
+- Eureka Discovery Client : a REST based service
+for locating services for the purpose of load
+balancing and failover of middle-tier servers.
+
 4. Configuration statique du système de routage
+#### dans fichier application.yml
+
+![sc](./captures/14.PNG)
+
+#### resultat:
+
+![sc](./captures/15.PNG)
+
+![sc](./captures/16.PNG)
+
 5. Créer l'annuaire Eureka Discrovery Service
+
 6. Faire une configuration dynamique des routes de la gateway
 7. Créer le service de facturation Billing-Service en utilisant Open Feign
 8. Créer un client Web Angular (Clients, Produits, Factures)
