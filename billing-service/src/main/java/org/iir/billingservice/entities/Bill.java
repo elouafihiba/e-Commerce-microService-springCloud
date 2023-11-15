@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.iir.billingservice.model.Customer;
 
 import java.util.Date;
 import java.util.List;
@@ -17,5 +18,8 @@ public class Bill {
     private Long customerId;
     @OneToMany(mappedBy = "bill")
     private List<ProductItem> productItems;
+    @Transient
+    private Customer customer;
+
 
 }
